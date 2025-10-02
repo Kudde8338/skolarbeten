@@ -1,0 +1,47 @@
+== 18. Countdown
+
+`countdown` tar ett positivt heltal som input och skriver (baklänges), ut alla tal från och med talet till och med 1. Efter det sista talet är utskrivet skriver programmet ut "Take-off!"
+
+[source, ruby]
+.Exempelanrop
+----
+countdown(1)
+1
+Take-off!
+countdown(3)
+3
+2
+1
+Take-off!
+----
+
+
+[IMPORTANT]
+====
+* Använd en link:../goals_and_plans#dekrementerande-räknande-loop[dekrementerande räknande loop].
+* Sätt slutvärdet i loopvillkoret till 1
+====
+
+[NOTE]
+====
+Om ni vill kan ni använda funktionen `sleep` för att få programmet att pausa mellan varje utskrift.
+
+[source, ruby, linenums]
+----
+puts "Hello" <1>
+sleep(1) <2>
+puts "World! <3>
+----
+<1> Skrivs ut direkt
+<2> Sleep pausar programmet (i det här fallet 1 sekund, eftersom argumentet 1 gavs till `sleep`
+<3> Här fortsätter programmet efter 1 sekund gått.
+====
+
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `countdown` i `countdown.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

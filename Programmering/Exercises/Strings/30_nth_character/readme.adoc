@@ -1,0 +1,31 @@
+== 30. Nth character
+
+`nth_character` tar en sträng och en position som input input och som returnerar tecknet på den positionen.
+
+[WARNING]
+====
+OBS: den givna positionen utgår från att första tecknet finns på position 1 (dvs som vi människor tänker, inte som datorer fungerar), om positionen är 0 eller negativ ska funktionen returnera `nil`.
+====
+
+
+[source, ruby]
+.Exempelanrop
+----
+nth_character("hello", 1) #=> "h"
+nth_character("world", 3) #=> "r"
+nth_character("ruby", 4) #=> "y"
+nth_character("programming", 5) #=> "r"
+nth_character("example", 0) #=> nil
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+====
+
+
+
+* Ni *behöver* inte skapa ett flödesschema för denna uppgift
+* Implementera funktionen `nth_character` i `nth_character.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

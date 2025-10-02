@@ -1,0 +1,31 @@
+== 19. Count even
+
+`count_even` Tar ett positivt heltal som input och returnerar antalet jämna heltal från och med 0 till och med talet.
+
+
+[source, ruby]
+.Exempelanrop
+----
+count_even(5) #=> 3
+count_even(10) #=> 6
+count_even(0) #=> 1
+count_even(7) #=> 4
+count_even(20) #=> 11
+----
+
+[WARNING]
+====
+Du får inte använda de inbyggda funktionerna `Integer#even?` eller `Integer#odd?`.
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `count_even` i `count_even.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,22 @@
+== 11 Is Positive
+
+`is_positive` tar ett tal som input och returnerar `true` om talet är negativt, och `false` om talet inte är negativt. Talet 0 är inte positive.
+
+[source, ruby]
+.Exempelanrop
+----
+is_positive(1337) #=> true
+is_positive(0) #=> false
+is_positive(-42) #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#mellanlagring[mellanlagring], så du bara behöver ha en enda `return` i din funktion.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `is_positive` i `is_positive.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

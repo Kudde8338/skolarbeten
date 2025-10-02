@@ -1,0 +1,27 @@
+== 13. Is Odd
+
+`is_odd` tar ett tal som input och returnerar `true` om talet är udda. Annars returnerar funktionen `false`.
+
+[source, ruby]
+.Exempelanrop
+----
+is_pdd(1337) #=> true
+is_odd(0) #=> false
+is_odd(-42) #=> false
+----
+
+[WARNING]
+====
+Du får inte använda de inbyggda funktionerna `Integer#even?` eller `Integer#odd?`.
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#mellanlagring[mellanlagring], så du bara behöver ha en enda `return` i din funktion.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `is_odd` i `is_odd.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

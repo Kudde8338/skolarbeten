@@ -1,0 +1,38 @@
+== 08. Hypotenuse
+
+`hypotenuse` tar två positiva tal som input och ger som output längden på hypotenusan i en rätvinklig triangel där kateternas längder är input-talen.
+
+För att räkna ut hypotenusan i en rätvinklig triangel använder du dig av Pythagoras sats: `a^2 + b^2 = c^2`.
+
+[TIP]
+====
+För att räkna ut roten av ett tal i Ruby kan du använda av den inbyggda funktionen `Math.sqrt`.
+
+[source, ruby]
+.Exempelanrop
+----
+number = 4
+Math.sqrt(number) #=> 2.0
+Math.sqrt(5) #=> 2.23606797749979
+----
+====
+
+[NOTE]
+====
+Observera att `Math.sqrt` returnerar ett flyttal.
+====
+
+[IMPORTANT]
+====
+Använd dig av verktyget
+ link:../goals_and_plans#mellanlagring[mellanlagring] för att lagra resultatet av `a^2 + b^2` _innan_ du räknar ut roten av `c^2`.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `hypotenuse` i `hypotenuse.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.
+
+=== Länkar
+* link:https://sv.wikipedia.org/wiki/Pythagoras_sats[Wikipedia: Pytagoras sats]

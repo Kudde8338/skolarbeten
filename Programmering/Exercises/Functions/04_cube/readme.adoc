@@ -1,0 +1,19 @@
+== 4. Cube
+
+`cube` tar ett heltal som input och ger *kubiken* på talet som output.
+
+Kubiken på ett tal innebär talet multiplicerat med sig själv tre gånger.
+
+[source, ruby]
+.Exempelanrop
+----
+cube(1) #=> 1
+cube(3) #=> 27
+cube(-6) #=> -216
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `cube` i `cube.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

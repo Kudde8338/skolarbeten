@@ -1,0 +1,25 @@
+== 24. Factorial
+
+`factorial` tar ett positivt heltal som input, och med hjälp av en loop returnerar fakulteten av talet.
+
+https://sv.wikipedia.org/wiki/Fakultet_(matematik)[Wikipedia: Fakultet]
+
+Exempel: 
+```ruby
+factorial(1) => 1
+factorial(2) => 2
+factorial(3) => 6
+factorial(4) => 24
+factorial(5) => 120
+```
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#dekrementerande-räknande-loop[dekrementerande räknande loop], link:../goals_and_plans#if[if] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `factorial` i `factorial.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

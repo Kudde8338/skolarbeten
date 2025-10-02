@@ -1,0 +1,48 @@
+require 'bundler'
+require 'bundler/cli'
+
+# Define a task to ensure gems are installed
+task :ensure_gems_installed do
+  begin
+    # Try to set up bundler and load the necessary gems
+    Bundler.setup
+  rescue Bundler::GemNotFound, Bundler::MissingSpecError
+    puts "Some gems are missing. Attempting to install them..."
+
+    # Run 'bundle install' if gems are missing
+    begin
+      Bundler::CLI.start(["install"])
+    rescue => e
+      puts "Failed to install gems. Please run `bundle install` manually."
+      puts "Error: #{e.message}"
+    end
+  end
+end
+
+task :all do
+  tests = Dir.glob('./test/*_spec.rb').sort_by do |a|
+    basename = File.basename(a)
+    splitted = basename.split("_")
+    splitted.first.to_i
+  end
+  tests.each do |test|
+    break unless system("ruby #{test}")
+  end
+end
+
+task :test do
+  file = Dir.glob("./test/*_#{ARGV[-1]}_spec.rb").first
+  if file
+    system("ruby #{file}")
+  else
+    puts "can not find file #{"./test/*_#{ARGV[-1]}_spec.rb"}"
+  end
+  exit
+end
+
+# Hook the gem check to run before every task
+Rake.application.tasks.each do |task|
+  task.enhance([:ensure_gems_installed]) unless task.name == "ensure_gems_installed"
+end
+
+task :default => :all

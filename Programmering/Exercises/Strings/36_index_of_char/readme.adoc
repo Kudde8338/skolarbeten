@@ -1,0 +1,26 @@
+== 36. Index of char
+
+`index_of_char` tar en sträng och ett tecken som input. Om tecknet finns i strängen returnerar funktionen index för den första förekomsten av tecknet. Om tecknet inte finns i strängen returnerar funktionen `nil`. 
+
+[source, ruby]
+.Exempelanrop
+----
+index_of_char("hello", "o") #=> 4
+index_of_char("ruby", "y") #=> 3
+index_of_char("example", "e") #=> 0
+index_of_char("foo", "b") #=> nil
+index_of_char("concat", "d") #=> nil
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `index_of_char` i `index_of_char.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

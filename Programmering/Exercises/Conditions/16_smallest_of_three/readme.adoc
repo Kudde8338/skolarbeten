@@ -1,0 +1,28 @@
+== 16. Smallest of three
+
+`smallest_of_three` tar tre heltal som input och returnerar det minsta talet.
+
+
+[source, ruby]
+.Exempelanrop
+----
+smallest_of_three(3, 1, 2) #=> 1
+smallest_of_three(5, 5, 5) #=> 5
+smallest_of_three(10, 20, 30) #=> 10
+smallest_of_three(7, 3, 9) #=> 3
+smallest_of_three(2, 2, 1) #=> 1
+----
+
+
+[IMPORTANT]
+====
+Lös först uppgiften *utan* att använda mellanlagring.
+
+När du fått det att fungera utan mellanlagring, kommentera bort koden och lös uppgiften *med* mellanlagring och enbart verktyget `if-else` (inte `if-elsif-else`).
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `smallest_of_three` i `smallest_of_three.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

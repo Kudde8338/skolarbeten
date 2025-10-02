@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1><em>Saftig</em> sockerkaka</h1>
+
+    <h2>Ingredienser:</h2>
+    <ul>
+        <li>1 msk smör eller margarin (till formen)</li>
+        <li>2 msk ströbröd (till formen)</li>
+        <li>3 ägg</li>
+        <li>3 dl strösocker</li>
+        <li>3 1/2 dl vetemjöl</li>
+        <li>2 tsk bakpulver</li>
+        <li>1 1/2 dl mjölk</li>
+        <li>50 g smör eller margarin</li>
+    </ul>
+
+    <h2>Gör så här:</h2>
+
+    <table>
+        <tr>
+            <td class="instructions-check">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <img src="img/checkbox-unchecked.png" alt="" class="checkbox-img unchecked">
+                    <img src="img/checkbox-checked.png" alt="" class="checkbox-img checked">
+                </label>
+            </td>
+            <td class="instructions-data"><p class="instruction"><b>1.</b> Sätt ugnen på 175°C.</p></td>
+        </tr>
+        <tr>
+            <td class="instructions-check">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <img src="img/checkbox-unchecked.png" alt="" class="checkbox-img unchecked">
+                    <img src="img/checkbox-checked.png" alt="" class="checkbox-img checked">
+                </label>
+            </td>
+            <td class="instructions-data"><p class="instruction"><b>2.</b> Smörj och bröa en bakform, ca 2 liter eller 24 cm i diameter (för 1 kaka).</p></td>
+        </tr>
+        <tr>
+            <td class="instructions-check">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <img src="img/checkbox-unchecked.png" alt="" class="checkbox-img unchecked">
+                    <img src="img/checkbox-checked.png" alt="" class="checkbox-img checked">
+                </label>
+            </td>
+            <td class="instructions-data"><p class="instruction"><b>3.</b> Vispa ägg och socker pösigt. Blanda mjöl, bakpulver och ev någon av smaksättningarna och rör ner i äggsmeten. Koka upp mjölken med matfettet och rör ner det. Häll smeten i formen.</p></td>
+        </tr>
+        <tr>
+            <td class="instructions-check">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <img src="img/checkbox-unchecked.png" alt="" class="checkbox-img unchecked">
+                    <img src="img/checkbox-checked.png" alt="" class="checkbox-img checked">
+                </label>
+            </td>
+            <td class="instructions-data"><p class="instruction"><b>4.</b> Grädda kakan genast i nedre delen av ugnen 35-40 minuter. Känn efter med sticka om kakan är klar. Då ska stickan vara torr.</p></td>
+        </tr>
+    </table>
+
+    <a href="https://www.ica.se/recept/saftig-sockerkaka-670957/" target="_blank">
+        <img src="img\saftig_sockerkaka.jpg" alt="Bild på sockerkaka">
+    </a>
+</body>
+</html>
+
+<script>
+  // Välj alla checkboxar
+  const checkboxes = document.querySelectorAll('.custom-checkbox input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const row = checkbox.closest('tr'); // hitta raden
+      const instruction = row.querySelector('.instruction'); // hitta texten
+
+      if (checkbox.checked) {
+        instruction.style.color = 'gray';
+        instruction.style.textDecoration = 'line-through';
+      } else {
+        instruction.style.color = '';
+        instruction.style.textDecoration = '';
+      }
+    });
+  });
+</script>

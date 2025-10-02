@@ -1,0 +1,37 @@
+== 20. Sum to
+
+`sum_to` tar ett positivt heltal som input och returnerar summan av alla heltal från 0 till och med talet. Lös uppgiften med hjälp av en loop. Ej tillåtet att använda formeln för aritmetisk summa ;)
+
+[source, ruby]
+.Exempelanrop
+----
+sum_to(5) #=> 15
+sum_to(10) #=> 55
+sum_to(0) #=> 0
+sum_to(7) #=> 28
+sum_to(20) #=> 210
+----
+
+
+[IMPORTANT]
+====
+* Använd en link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop].
+* Initialisera räknarvariabeln till 1.
+* Initialisera summavariabeln till 0.
+====
+
+[WARNING]
+====
+Ej tillåtet att använda formeln för aritmetisk summa ;).
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `sum_to` i `sum_to.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

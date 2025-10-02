@@ -1,0 +1,33 @@
+== 34. Length
+
+`length` tar en sträng som input och returnerar strängens längd.
+
+
+[source, ruby]
+.Exempelanrop
+----
+length("hello") #=> 5
+length("world") #=> 5
+length("ruby") #=> 4
+length("programming") #=> 11
+length("") #=> 0
+----
+
+[WARNING]
+====
+Du får inte använda `#length`, `#size` eller `#count` eller liknande.
+====
+
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#loop-med-brytvärde[loop med brytvärde]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `length` i `length.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

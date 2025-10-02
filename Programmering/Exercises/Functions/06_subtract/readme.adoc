@@ -1,0 +1,17 @@
+== 6. Subtract
+
+`subtract` tar *två* heltal som input och ger resten av talen som output.
+
+[source, ruby]
+.Exempelanrop
+----
+subtract(1, 0) #=> 1
+subtract(3, 3) #=> 0
+subtract(13,37) #=> -24
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `subtract` i `subtract.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

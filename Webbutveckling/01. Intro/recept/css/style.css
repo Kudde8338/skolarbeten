@@ -1,0 +1,72 @@
+body {
+    background-color: pink;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font: 2.5rem 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+input {
+    display: inline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.instructions-data {
+    align-items: left;
+    vertical-align: center;
+}
+
+.instructions-check {
+    align-items: right;
+    vertical-align: center;
+}
+
+.instruction {
+    margin: 0;
+    padding: 0%;
+    vertical-align: center;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-img {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+.checkbox-img.checked {
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
+}

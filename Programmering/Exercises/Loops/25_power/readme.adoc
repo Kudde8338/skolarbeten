@@ -1,0 +1,26 @@
+== 25. Power
+
+`power` tar två positiva heltal som input, utan att använda multiplikations-operatorn (`$$*$$`) eller exponentierings-operatorn (`$$*$$$$*$$`).
+returnerar input 1 upphöjt till input 2.
+
+[source, ruby]
+.Exempelanrop
+----
+power(2, 3) #=> 8
+power(5, 0) #=> 1
+power(10, 1) #=> 10
+power(3, 4) #=> 81
+power(2, 120) #=> 1329227995784915872903807060280344576
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `power` i `power.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

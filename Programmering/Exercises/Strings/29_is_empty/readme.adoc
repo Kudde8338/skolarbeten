@@ -1,0 +1,21 @@
+== 29. Is empty
+
+`is_empty` tar en sträng som input input och som returnerar `true` om strängen är tom, annars returnerar funktionen `false`.
+
+[source, ruby]
+.Exempelanrop
+----
+is_empty("") #=> true
+is_empty("hello") #=> false
+is_empty("world") #=> false
+is_empty("ruby") #=> false
+is_empty("programming") #=> false
+----
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `is_empty` i `is_empty.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,18 @@
+== 5. Add
+
+`add` tar *två* heltal som input och ger summan av talen som output.
+
+[source, ruby]
+.Exempelanrop
+----
+add(1, 0) #=> 1
+add(3,-3) #=> 0
+add(13,37) #=> 50
+add(-50,40) #=> -10
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `add` i `add.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

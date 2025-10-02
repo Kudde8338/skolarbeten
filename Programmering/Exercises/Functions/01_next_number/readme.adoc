@@ -1,0 +1,18 @@
+== 1. Next Number
+
+`next_number` tar ett heltal som argument och returnerar nästa större heltal.
+
+
+[source,ruby]
+.Exempelanrop
+----
+next_number(1) #=> 2
+next_number(-5) #=> -4
+next_number(9000) #=> 9001
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `next_number` i `next_number.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

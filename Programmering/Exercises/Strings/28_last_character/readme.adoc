@@ -1,0 +1,24 @@
+== 28. Last character
+
+`last_character` tar en sträng som input input och returnerar det sista tecknet i strängen.
+
+[source, ruby]
+.Exempelanrop
+----
+last_character("hello") #=> "o"
+last_character("world") #=> "d"
+last_character("ruby") #=> "y"
+last_character("programming") #=> "g"
+last_character("a") #=> "a"
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+
+====
+
+* Ni *behöver* inte skapa ett flödesschema för denna uppgift
+* Implementera funktionen `last_character` i `last_character.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

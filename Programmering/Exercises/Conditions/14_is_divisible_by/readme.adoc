@@ -1,0 +1,21 @@
+== 14. Is Divisible by
+
+`is_divisible_by` tar två heltal som input och returnerar `true` om det första heltalet är jämnt delbart med det andra. Om så ej är fallet returnerar funktionen `false`.
+
+[source, ruby]
+.Exempelanrop
+----
+is_divisible_by(1337, 191) #=> true
+is_divisible_by(100, 3) #=> false
+is_divisible_by(-42, 7) #=> true
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#mellanlagring[mellanlagring], så du bara behöver ha en enda `return` i din funktion.
+====
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `is_divisible_by` i `is_divisible_by.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

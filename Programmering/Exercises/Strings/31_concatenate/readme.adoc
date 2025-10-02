@@ -1,0 +1,25 @@
+== 31. Concatenate
+
+`concatenate` tar två strängar som input och returnerar en ny sträng som är de två strängarna konkatenerade.
+
+[source, ruby]
+.Exempelanrop
+----
+concatenate("hello", "world") #=> "helloworld"
+concatenate("ruby", "programming") #=> "rubyprogramming"
+concatenate("example", "test") #=> "exampletest"
+concatenate("foo", "bar") #=> "foobar"
+concatenate("concat", "enate") #=> "concatenate"
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#konkatenering[konkatenering]
+====
+
+
+
+* Ni *behöver* inte skapa ett flödesschema för denna uppgift
+* Implementera funktionen `concatenate` i `concatenate.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

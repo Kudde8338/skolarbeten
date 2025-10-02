@@ -1,0 +1,137 @@
+body {
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+  display:grid;
+  height:300vh;
+  grid-template-rows: 5vh 45vh 5vh 45vh 5vh 45vh 5vh 45vh 5vh 45vh 5vh 45vh;
+}
+
+
+
+/* #wrapper > section {
+  display:flex;
+} */
+
+h1 {
+  margin:0px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*1. Centera boxen */
+section#part-blue {
+  display: flex;
+  grid-template: 1fr / 1fr;
+  background-color:rgba(0, 162, 255,1);
+  align-items: center;
+  justify-content: center;
+
+}
+
+#part-blue #center-box {
+  width:100px;
+  height:100px;
+  background-color: royalblue;
+
+  }
+
+/*2. Sprid ut länkarna jämnt horisontellt*/
+
+section#part-orange {
+  display: flex;
+  background-color:rgba(250, 182, 71, 1);
+  justify-content: space-evenly;
+}
+
+/* 3. Stapla boxarna vertikalt */
+section#part-pink {
+  background-color: pink;
+  display:flex;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  flex-direction: column;
+}
+
+section#part-pink .column-box {
+  height:100px;
+  width:100px;
+  background-color: hotpink;
+  margin:5px;
+}
+
+/* 4. Få boxarna att "wrappas" (flera rader) */
+
+section#part-green {
+  background-color: rgba(150, 255, 118,1);
+  display:flex;
+  flex-wrap: wrap
+  
+}
+
+section#part-green article {
+  width:25%;
+  margin:5px;
+  height:100px;
+  background-color:rgba(0, 161, 0, 1);
+}
+
+/* 5. Ändra ordning på boxarna */
+
+section#part-brown {
+  background-color: rgba(172, 103, 64, 1);
+  display:flex;
+  align-items:center;
+  justify-content:center;  
+  flex-direction: row-reverse;
+}
+
+section#part-brown article {
+  height:100px;
+  width:100px;
+}
+
+#part-brown article:nth-child(1) {
+  background-color:lightblue;
+  
+}
+#part-brown article:nth-child(2) {
+  background-color:lightgreen;
+  
+}
+#part-brown article:nth-child(3) {
+  background-color:yellow;
+  
+}
+#part-brown article:nth-child(4) {
+  background-color:orange;
+  
+}
+#part-brown article:nth-child(5) {
+  background-color:red;
+  
+}
+
+/* 6. Den fjärde boxen ska vara dubbelt så bred som <em>en</em>av de andra tre. */
+section#part-grey {
+  display:flex;
+  background-color:lightgrey;  
+  align-items: center;
+}
+
+section#part-grey div {
+  background-color:grey;
+  height:50%;
+  margin:5px;
+  overflow: hidden;
+  grid-area: grey;
+  flex: 1;
+
+}
+section#part-grey div#double-trouble {
+  flex: 2;
+}
+
+img {
+  width:100%;
+}

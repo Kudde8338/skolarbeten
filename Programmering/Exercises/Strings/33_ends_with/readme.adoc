@@ -1,0 +1,26 @@
+== 33. Ends with
+
+`ends_with` tar en sträng och ett tecken (en sträng med enbart ett tecken i) som input och returnerar true om den första strängens sista tecken är tecknet i den andra strängen. Annars skall funktionen returnera false.
+
+[source, ruby]
+.Exempelanrop
+----
+ends_with("hello", "o") #=> true
+ends_with("ruby", "y") #=> true
+ends_with("example", "e") #=> true
+ends_with("foo", "b") #=> false
+ends_with("concat", "d") #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `ends_with` i `ends_with.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

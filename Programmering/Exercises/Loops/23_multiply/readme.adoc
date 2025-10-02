@@ -1,0 +1,26 @@
+== 23. Multiply
+
+`multiply` tar två positiva heltal som input, utan att använda multiplikations-operatorn (`$$*$$`) returnerar produkten av talen.
+
+
+[source, ruby]
+.Exempelanrop
+----
+multiply(2, 3) #=> 6
+multiply(5, 0) #=> 0
+multiply(10, 1) #=> 10
+multiply(3, 4) #=> 12
+multiply(2, 5) #=> 10
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop], link:../goals_and_plans#if[if] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `multiply` i `multiply.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

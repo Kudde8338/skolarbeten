@@ -1,0 +1,19 @@
+== 3. Square
+
+`square` tar ett som input och ger kvadraten på talet som output.
+
+Kvadraten på ett tal innebär talet multiplicerat med sig själv.
+
+[source, ruby]
+.Exempelanrop
+----
+square(1) #=> 1
+square(3) #=> 9
+square(-6) #=> 36
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `square` i `square.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

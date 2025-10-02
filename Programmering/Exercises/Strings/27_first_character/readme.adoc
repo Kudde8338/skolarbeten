@@ -1,0 +1,25 @@
+== 27. first_character
+
+`first_character` tar en sträng som input input och som returnerar det första tecknet i strängen.
+
+
+[source, ruby]
+.Exempelanrop
+----
+first_character("hello") #=> "h"
+first_character("world") #=> "w"
+first_character("ruby")  #=> "r"
+first_character("code")  #=> "c"
+first_character("test")  #=> "t"
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+
+====
+
+* Ni *behöver* inte skapa ett flödesschema för denna uppgift
+* Implementera funktionen `first_character` i `first_character.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

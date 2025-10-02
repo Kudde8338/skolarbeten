@@ -1,0 +1,14 @@
+== 15. Smallest of two
+
+`smallest_of_two` tar två heltal som input och returnerar det minsta talet.
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#mellanlagring[mellanlagring], så du bara behöver ha en enda `return` i din funktion.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `smallest_of_two` i `smallest_of_two.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

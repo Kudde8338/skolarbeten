@@ -1,0 +1,36 @@
+== 9. Absolute
+
+`absolute` tar ett tal som input och returnerar talets absolutbelopp.
+
+[NOTE]
+====
+Ett tals absolutbelopp är talet utan dess tecken (positivt eller negativt).
+====
+
+[source, ruby]
+.Exempelanrop
+----
+absolute(1337) #=> 1337
+absolute(-1337) #=> 1337
+absolute(0) #=> 0
+----
+
+[WARNING]
+====
+Lös uppgiften **utan** att använda `Math.sqrt`. eller `.abs`.
+====
+
+[IMPORTANT]
+====
+Använd link:../goals_and_plans#if[verktyget if] (inte `if-else`) för att ändra (eller inte ändra) på inputvariabeln.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `absolute` i `absolute.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.
+
+=== Länkar
+
+* link:https://sv.wikipedia.org/wiki/Absolutbelopp[Wikipedia: Absolutbelopp]

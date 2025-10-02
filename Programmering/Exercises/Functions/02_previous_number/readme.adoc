@@ -1,0 +1,17 @@
+== 2. Previous number
+
+`previous_number` tar ett heltal som input och ger föregående tal som output.
+
+[source, ruby]
+.Exempelanrop
+----
+previous_number(2) #=> 1
+previous_number(-5) #=> -6
+previous_number(9000) #=> 8999
+----
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `previous_number` i `previous_number.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

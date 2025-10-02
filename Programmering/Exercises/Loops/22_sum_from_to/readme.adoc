@@ -1,0 +1,25 @@
+== 22. Sum from to
+
+`sum_from_to` Tar två heltal som input och returnerar summan av alla heltal från och med input1 till och med input2.
+
+[source, ruby]
+.Exempelanrop
+----
+sum_from_to(1, 10) => 55
+sum_from_to(5, 10) => 45
+sum_from_to(10, 10) => 10
+sum_from_to(10, 5) => 45
+sum_from_to(20, 25) => 135
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#inkrementerande-räknande-loop[inkrementerande räknande loop], link:../goals_and_plans#if[if] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `sum_from_to` i `sum_from_to.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

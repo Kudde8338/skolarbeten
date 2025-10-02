@@ -1,0 +1,53 @@
+== 12. Is Even
+
+`is_even` tar ett tal som input och returnerar `true` om talet är jämnt. Annars returnerar funktionen `false`.
+
+[source, ruby]
+.Exempelanrop
+----
+is_even(1337) #=> false
+is_even(0) #=> true
+is_even(-42) #=> true
+----
+
+
+[TIP]
+====
+För att ta reda på om ett tal är jämnt kan du använda modulo-operatorn (`%`).
+Modulo-operatorn returnerar _resten_ av divisionen mellan två tal, det vill säga, om vi gör heltalsdivision med de två operanderna, vad blir "över"?
+
+[source,ruby]
+.Exempel
+----
+9 % 4 # => 1 <1>
+9 % 3 # => 0 <2>
+9 % 2 # => 1 <3>
+8 % 4 # => 0 <4>
+8 % 3 # => 2 <5>
+8 % 2 # => 0 <6>
+----
+<1> 9 delat med 4 blir 2 med resten 1.
+<2> 9 delat med 3 blir 3 med resten 0.
+<3> 9 delat med 2 blir 4 med resten 1.
+<4> 8 delat med 4 blir 2 med resten 0.
+<5> 8 delat med 3 blir 2 med resten 2.
+<6> 8 delat med 2 blir 4 med resten 0.
+
+Detta innebär att om resten blir noll när vi delar ett tal med 2, så är talet jämnt.
+====
+
+[WARNING]
+====
+Du får inte använda de inbyggda funktionerna `Integer#even?` eller `Integer#odd?`.
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#mellanlagring[mellanlagring], så du bara behöver ha en enda `return` i din funktion.
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `is_even` i `is_even.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

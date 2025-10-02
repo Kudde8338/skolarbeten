@@ -1,0 +1,26 @@
+== 32. Starts with
+
+`starts_with` tar en sträng och ett tecken (en sträng med enbart ett tecken i) som input och returnerar true om den första strängens första tecken är tecknet i den andra strängen. Annars skall funktionen returnera false.
+
+[source, ruby]
+.Exempelanrop
+----
+starts_with("hello", "h") #=> true
+starts_with("ruby", "r") #=> true
+starts_with("example", "e") #=> true
+starts_with("foo", "b") #=> false
+starts_with("concat", "d") #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `starts_with` i `starts_with.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

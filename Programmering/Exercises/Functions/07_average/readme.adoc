@@ -1,0 +1,39 @@
+== 7. Average
+
+`average` tar *fyra* heltal som input och ger medelvärdet av dessa som output.
+[source, ruby]
+.Exempelanrop
+----
+average(10, 20, 30, 40) #=> 25.0
+average(0, 1, 2, 3) #=> 1.5
+average(1, 2, 3, 4) #=> 2.5
+----
+
+[TIP]
+====
+Om de ingående operanderna i divisionen är heltal kommer ruby genomföra heltalsdivision.
+
+[source, ruby]
+.Exempel
+----
+9 / 2 #=> 4
+----
+
+För att få svar i flyttal behöver någon av operanderna vara ett flyttal.
+(i den här uppgiften kan ni dela med `4.0` istället för `4`).)
+
+Observera att det är punkt (`.`) som används för decimaler i Ruby, inte komma. I de flesta länder använder man punkt som decimaltecken, inte komma.
+
+
+[source, ruby]
+.Exempel
+----
+9 / 2.0 #=> 4.5
+----
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Skapa funktionen `average` i `average.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,45 @@
+== 26. Collatz conjecture
+
+`collatz` tar in ett positivt heltal och returnerar antalet värden som input-variabeln har haft när resultatet blir 1.
+
+
+_Collatz problem_ är ett olöst problem inom talteorin. Problemet kallas även för bland annat _Collatz förmodan_, _Ulam-förmodan_ och _3n+1-förmodan_.
+
+Problemet utgår från en räknelek som börjar med ett positivt heltal `n`.
+
+Om `n` är jämnt ska man dela `n` med två (och uppdatera `n` med det nya värdet). Om `n` är udda ska man istället multiplicera `n` med 3 och addera 1 (och uppdatera `n` med det nya värdet).
+
+Sedan upprepas detta steg med det nya värdet på `n` tills värdet på `n` blir 1. _Collatz problem_ är att avgöra om `n`, oavsett vilket tal man börjar med, kan nå talet 1.
+
+Skriv en funktion som tar ett positivt heltal som input, och implementerar algoritmen ovan, och returnerar **antalet värden** som input-variabeln har haft när resultatet blir `n`.
+
+https://en.wikipedia.org/wiki/Collatz_conjecture[Wikipedia: Collatz Conjecture]
+
+
+
+[source, ruby]
+.Exempelanrop
+----
+collatz(1) #=> 1
+collatz(2) #=> 2
+collatz(3) #=> 8
+collatz(6) #=> 9
+collatz(19) #=> 21
+----
+
+[WARNING]
+====
+Du får inte använda de inbyggda funktionerna `Integer#even?` eller `Integer#odd?`.
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#loop-med-brytvärde[loop med brytvärde], link:../goals_and_plans#if-else[if-else] och link:../goals_and_plans#räknar-variabel[räknar variabel].
+
+====
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `collatz` i `collatz.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

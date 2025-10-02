@@ -1,0 +1,26 @@
+== 35. Contains char
+
+`contains_char` tar en sträng och ett tecken (en sträng med enbart ett tecken i) som input och returnerar true om den första strängens innehåller tecknet i den andra strängen. Annars skall funktionen returnera false.
+
+[source, ruby]
+.Exempelanrop
+----
+contains_char("hello", "o") #=> true
+contains_char("ruby", "y") #=> true
+contains_char("example", "e") #=> true
+contains_char("foo", "b") #=> false
+contains_char("concat", "d") #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `contains_char` i `contains_char.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.
