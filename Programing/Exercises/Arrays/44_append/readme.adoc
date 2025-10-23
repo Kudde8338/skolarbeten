@@ -1,0 +1,20 @@
+== 44. Append
+
+`append` tar en array och ett element som input. Funktionen returnera en lista där elementet har lagts till i slutet av arrayen.
+
+[source, ruby]
+.Exempelanrop
+----
+append(["hello"], "o") #=> ["hello", "o"]
+append(["ruby"], "y") #=> ["ruby", "y"]
+append(["example"], "e") #=> ["example", "e"]
+append(["foo"], "b") #=> ["foo", "b"]
+append(["concat"], "d") #=> ["concat", "d"]
+----
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `append` i `append.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

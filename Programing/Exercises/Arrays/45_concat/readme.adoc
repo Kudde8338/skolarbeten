@@ -1,0 +1,31 @@
+== 45. Concat
+
+`concat` tar två arrayer som input och ger en ny array som output, där båda arrayerna sätts ihop
+
+[WARNING]
+====
+Skriv funktionen utan att använda `+` mellan två arrayer. Du får använda loopar, samt `<<`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+concat([1, 2, 3], [4, 5, 6]) #=> [1, 2, 3, 4, 5, 6]
+concat(["a", "b"], ["c", "d"]) #=> ["a", "b", "c", "d"]
+concat([], [1, 2, 3]) #=> [1, 2, 3]
+concat([1, 2, 3], []) #=> [1, 2, 3]
+concat([], []) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `concat` i `concat.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

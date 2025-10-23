@@ -1,0 +1,31 @@
+== 50. Max
+
+`max` tar en array av floats eller integers som input och returnerar det största värdet som output.
+
+[WARNING]
+====
+Skapa funktionen utan att använda metoden `.max`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+max([1, 2, 3, 4, 5]) #=> 5
+max([10, 20, 30, 40, 50]) #=> 50
+max([-1, -2, -3, -4, -5]) #=> -1
+max([3.5, 2.1, 5.6, 1.2]) #=> 5.6
+max([100]) #=> 100
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `max` i `max.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

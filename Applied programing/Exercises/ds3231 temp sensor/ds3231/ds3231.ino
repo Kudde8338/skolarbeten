@@ -1,9 +1,8 @@
 /*
-* Name: övningsprojekt
-* Author: Victor Huke
-* Date: 2025-10-13
-* Description: This project uses a ds3231 to measure time and displays the time to an 1306 oled display, 
-* Further, it measures temprature with ds3231 and displays a mapped value to a 9g-servo-motor.
+* Name: Analog Clock
+* Author: Sydney Myrén
+* Date: 2025-10-20
+* Description: This project uses a ds3231 to measure time and displays the analog time to an 1306 oled display.
 */
 
 // Include Libraries
@@ -45,10 +44,10 @@ void setup() {
 
 void loop() {
   //oledWrite("Time: " + String(getTime()), 0, 22, "Temp: " + String(getTemp()), 0, 44);   //remove comment when the function is written
-  oledAnalogClock(1, 2, 3);
+  oledAnalogClock(getHour(), getMinute(), getSecond());
   servoWrite(getTemp());  //remove comment when the function is written
 
-  Serial.println("Time: " + getTime() + " | " + "Temperature: " + getTemp());
+  //Serial.println("Time: " + getTime() + " | " + "Temperature: " + getTemp());
 
   delay(200);
 }
@@ -61,6 +60,21 @@ void loop() {
 String getTime() {
   DateTime now = rtc.now();
   return String(now.hour()) + ":" + String(now.minute()) + ":" + String(now.second());
+}
+
+int getHour(){
+  DateTime now = rtc.now();
+  return now.hour();
+}
+
+int getMinute(){
+  DateTime now = rtc.now();
+  return now.minute();
+}
+
+int getSecond(){
+  DateTime now = rtc.now();
+  return now.second();
 }
 
 /*
@@ -82,6 +96,7 @@ void oledWrite(String time, int x, int y, String temp, int x2, int y2) {
   do {
     u8g.drawStr(x, y, time.c_str());
     u8g.drawStr(x2, y2, temp.c_str());
+
   } while (u8g.nextPage());
 }
 
@@ -97,19 +112,40 @@ void servoWrite(float value) {
 void oledAnalogClock(int h, int m, int s) {
   int centerX = SCREEN_WIDTH / 2;
   int centerY = SCREEN_HEIGHT / 2;
-  int radius = SCREEN_HEIGHT / 2 - 5;
 
-  float hDeg = map(s, 0, 60, 0, 360);
+  int minuteRadius = SCREEN_HEIGHT / 2 - 5;
+  int hourRadius = minuteRadius*(2.0/3.0);
+  int secondRadius = minuteRadius;
 
-  float theta = hDeg * M_PI / 180.0;
+// Calculate minute coords
+  float mDeg = map(m, 0, 60, 0, 360) - 90;
+  float minuteTheta = mDeg * M_PI / 180.0;
 
-  int x = centerX + radius * cos(theta);
-  int y = centerY + radius * sin(theta);
+  int minuteX = centerX + minuteRadius * cos(minuteTheta);
+  int minuteY = centerY + minuteRadius * sin(minuteTheta);
+
+// Calculate hour coords
+  float hDeg = ((h % 12) + m / 60.0) * 30 - 90;
+  float hourTheta = hDeg * M_PI / 180.0;
+
+  int hourX = centerX + hourRadius * cos(hourTheta);
+  int hourY = centerY + hourRadius * sin(hourTheta);
+
+// Calculate second coords
+  float sDeg = map(s, 0, 60, 0, 360) - 90;
+  float secondTheta = sDeg * M_PI / 180.0;
+
+  int secondX = centerX + secondRadius * cos(secondTheta);
+  int secondY = centerY + secondRadius * sin(secondTheta);
 
   u8g.firstPage();
   do {
-    u8g.drawCircle(centerX, centerY, radius);
+    u8g.drawCircle(centerX, centerY, minuteRadius);
     u8g.drawDisc(centerX, centerY, 2);
-    u8g.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, x, y);
+
+    u8g.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, minuteX, minuteY);
+    u8g.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, hourX, hourY);
+    u8g.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, secondX, secondY);
+
   } while (u8g.nextPage());
 }

@@ -1,0 +1,32 @@
+== 53. split_char
+
+`split_char` tar en sträng och ett tecken som input och ger en array som output, där elementen i arrayen 
+är alla delar av strängen som är avskiljda med tecknet.
+
+[WARNING]
+====
+Skriv funktionen utan att använda metoden `.split`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+split_char("hello world", " ") #=> ["hello", "world"]
+split_char("a,b,c,d", ",") #=> ["a", "b", "c", "d"]
+split_char("one:two:three", ":") #=> ["one", "two", "three"]
+split_char("no delimiter", "x") #=> ["no delimiter"]
+split_char("repeat repeat repeat", " ") #=> ["repeat", "repeat", "repeat"]
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `split_char` i `split_char.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

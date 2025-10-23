@@ -1,0 +1,26 @@
+== 39. Contains substring
+
+`contains_substring` tar två strängar som input och returnerar true om den första strängens innehåller *substrängen* som representeras av den andra strängen. Annars skall funktionen returnera false.
+
+[source, ruby]
+.Exempelanrop
+----
+contains_substring("hello", "hello") #=> true
+contains_substring("ruby", "y") #=> true
+contains_substring("example", "ample") #=> true
+contains_substring("foo", "boo") #=> false
+contains_substring("", "") #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och loopar. Du får inte använda `ranges`, `slices`, `.include?`, `gsub` etc.
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `contains_char` i `contains_char.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

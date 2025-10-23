@@ -1,0 +1,30 @@
+== 55. exclude
+
+`exclude` tar en array och ett värde som input och ger en ny array som output, där den nya arrayen inte innehåller värdet.
+
+[WARNING]
+====
+Skriv funktionen utan att använda `Array#select`, `Array#map` eller `Array#reject`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+exclude([1, 2, 3, 4], 3) #=> [1, 2, 4]
+exclude(["apple", "banana", "cherry"], "banana") #=> ["apple", "cherry"]
+exclude([true, false, true], true) #=> [false]
+exclude([1, 2, 3], 4) #=> [1, 2, 3]
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `exclude` i `exclude.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,30 @@
+== 56. Unique
+
+`unique` tar en array som input och en ny array som output, där den nya arrayen inte innehåller några dubletter.
+
+[WARNING]
+====
+Skriv funktionen utan att använda metoderna `.uniq` och `.include?`. Om du har skrivit en egen funktion motsvarande metoden `.include?` får du givetvis använda din egna funktion!
+====
+
+[source, ruby]
+.Exempelanrop
+----
+unique([1, 2, 2, 3, 4, 4, 5]) #=> [1, 2, 3, 4, 5]
+unique(['a', 'b', 'b', 'c', 'a']) #=> ['a', 'b', 'c']
+unique([1, 1, 1, 1, 1]) #=> [1]
+unique([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `unique` i `unique.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

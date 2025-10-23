@@ -1,19 +1,23 @@
 body {
-    margin: 0;
+    margin: 5px;
+    background-color: #9c4817;
 }
 
 #container {
     display: grid;
-    height: 100vh;
-    grid-template: 80px 1fr 80px / 1fr 4    fr;
+    height: calc(100vh - 10px);
+    grid-template: 80px 1fr 80px / 1fr 6fr 1fr;
+    gap:5px;
     grid-template-areas: 
-    'header header'
-    'filters main'
-    'footer footer';
+    'header header header'
+    'left main right'
+    'footer footer footer';
 }
 
 #header {
-    margin: 0   ;
+    margin: 0;
+    padding: 20px 40px;
+    border-radius: 20px;
     display: flex;
     grid-area: header;
     background-color: #432818;
@@ -21,29 +25,133 @@ body {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-#filters {
-    grid-area: filters;
-    background-color: #503627;
+#left {
+    grid-area: left;
+    background-color: #432818;
+    border-radius: 20px;
+}
+
+#right {
+    grid-area: right;
+    background-color: #432818;
+    border-radius: 20px;
 }
 
 #main {
-    display: flex;
+    display: grid;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 60px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
     background-color: #f07b37;
-    flex-wrap: wrap;
+    grid-template-areas: 
+    's1 s2 s3'
+    's4 s5 s6';
 }
 
 #footer {
+    border-radius: 20px;
     grid-area: footer;
     background-color: #432818;
 }
 
 .squares {
-    aspect-ratio: 1 / 2;
-    background-color: #bb9457;
-    border-radius: 10px;
-    margin: 20px;
-    width: minmax();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #432818;
+    border-radius: 20px;
+    padding: 45px;
+    position: relative;
+}
+
+
+#square-1 {
+    grid-area: s1;
+}
+#square-2 {
+    grid-area: s2;
+}
+#square-3 {
+    grid-area: s3;
+}
+#square-4 {
+    grid-area: s4;
+}
+#square-5 {
+    grid-area: s5;
+}
+#square-6 {
+    grid-area: s6;
+}
+
+img {
+    height: 250px;
+    width: 175px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+.costume_name {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    justify-self:center;
+    display: block;
+}
+
+#SHOP {
+    justify-self: left;
+}
+
+#CONTACT {
+    justify-self: right;
+}
+
+h1 {
+    margin: 0;
+}
+
+#header h1:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.asides {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #a15325;
+    width: calc(100vw/8 - 50px);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+p {
+    margin: 0;
+}
+h3 {
+    margin: 2px;
 }

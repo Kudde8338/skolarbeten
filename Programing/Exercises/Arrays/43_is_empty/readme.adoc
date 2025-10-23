@@ -1,0 +1,20 @@
+== 43. Is empty
+
+`is_empty` tar en array som input och returnerar `true` om arrayen är tom. Annars returnerar funktionen `false`. 
+
+[source, ruby]
+.Exempelanrop
+----
+is_empty([]) #=> true
+is_empty([1, 2, 3]) #=> false
+is_empty(["a", "b", "c"]) #=> false
+is_empty([1]) #=> false
+is_empty([false]) #=> false
+----
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `is_empty` i `is_empty.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

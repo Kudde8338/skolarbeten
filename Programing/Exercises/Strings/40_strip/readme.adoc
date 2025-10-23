@@ -1,0 +1,26 @@
+== 40. Strip
+
+`strip` tar en sträng som input. Om strängen börjar eller slutar med en whitspace (`"\r"` , `"\n"`, `"\t"` , `""` ska funktionen returnera en ny sträng bestående av den ingående strängen, men utan inledande eller avslutande whitespace. Om strängen inte slutar med en radbrytning returneras den ingående strängen oförändrad.
+
+[source, ruby]
+.Exempelanrop
+----
+strip(" hello ") #=> "hello"
+strip("\t\nhell\no\t \n\t") #=> "hell\no"
+strip("\nhello\n") #=> "hello"
+strip("\t hell\no") #=> "hell\no"
+strip("hell\no \n") #=> "hell\no"
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `chomp` i `chomp.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

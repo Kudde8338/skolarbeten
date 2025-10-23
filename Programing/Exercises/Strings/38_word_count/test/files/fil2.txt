@@ -1,0 +1,9 @@
+The quick brown fox jumps over the lazy dog.
+Numbers: 123 456 789.
+Punctuation: does it count? Yes, it does!
+
+	Whitespace	tests   too.
+
+Newlines
+also
+matter.

@@ -1,0 +1,31 @@
+== 48. Average
+
+`average` tar en array av integers som input och ger medelvärdet av talen som output.
+
+[WARNING]
+====
+Skriv funktionen utan att använda metoden `.sum`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+average([1, 2, 3, 4, 5]) #=> 3.0
+average([10, 20, 30]) #=> 20.0
+average([7, 14, 21, 28]) #=> 17.5
+average([5, 10]) #=> 7.5
+average([42]) #=> 42.0
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `average` i `average.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+}
+
+#mainContainer {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 120px 1fr / 360px 1fr;
+    grid-template-areas:
+        'nav head'
+        'nav main';
+}
+
+header {
+    color: #a8a7a9;
+    display: flex;
+    grid-area: head;
+    background-color: #18181a;
+    align-items: center;
+    border-bottom: 3px solid #27282c;
+}
+
+nav {
+    color: #a8a7a9;
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    background-color: #18181a;
+    border-right: 3px solid #27282c;
+}
+
+main {
+    color: #a8a7a9;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: grid;
+    padding: 20px;
+    overflow-y: scroll;
+    grid-area: main;
+    background-color: #18181a;
+    grid-template: 400px 100px 300px 100px 300px 100px 300px 100px 300px 200px/ 1fr;
+    grid-template-areas: 
+    'featured'
+    'h1'
+    'popular'
+    'h2'
+    'wishlist'
+    'h3'
+    'free'
+    'h4'
+    'owned'
+    'footer';
+}
+
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+#search {
+    display: flex;
+    background-color: #18181a;
+    border: 3px solid #27282c;
+    height: 70px;
+    width: 550px;
+    margin: 25px;
+    border-radius: 17px;
+    font-size: 35px;
+    color: white;
+    align-items: center;
+}
+
+#searchBar {
+    display: flex;
+    background-color: rgba(194, 109, 5, 0);
+    border: 0;
+    height: 60px;
+    width: 100%;
+    margin: 25px;
+    border-radius: 17px;
+    font-size: 35px;
+    color: white;
+    align-items: center;
+    border-color: transparent;
+}
+
+
+#searchIcon {
+    height: 55px;
+    margin: 15px;
+}
+
+#featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBarIcons {
+    height: 35px;
+    width: 35px;
+}
+
+.navBarButtons {
+    color: #a8a7a9; 
+    width: 200px;
+    background-color: transparent;
+    border: 0;
+}
+
+.scrolls {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.scrolls::-webkit-scrollbar {
+    display: none;
+}
+
+.games {
+    height: 300px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.ghost {
+    height: 400px;
+    width: calc(100vw - 400px);
+    border-radius: 20px;
+}
+
+#header1 {
+    grid-area: h1;
+}
+#header2 {
+    grid-area: h2;
+}
+#header3 {
+    grid-area: h3;
+}
+#header4 {
+    grid-area: h4;
+}
+
+#popular {
+    grid-area: popular;
+}
+
+#wishlist {
+    grid-area: wishlist;
+
+}
+
+#free {
+    grid-area: free;
+}
+
+#owned {
+    grid-area: owned
+}
+
+#main-footer {
+    grid-area: footer
+}
+
+#steamLogo {
+    align-self: top;
+    align-self: center;
+    width: 300px;
+}

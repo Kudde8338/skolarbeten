@@ -1,0 +1,30 @@
+== 54. filter
+
+`filter` tar en array och ett värde som input och ger en ny array som output, där den nya arrayen endast innehåller värdet som angavs som andra parameter.
+
+[WARNING]
+====
+Skriv funktionen utan att använda `Array#select`, `Array#map` eller `Array#reject`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+filter([1, 2, 3, 4, 5], 3) #=> [3]
+filter([10, 20, 30, 40], 25) #=> []
+filter(["apple", "banana", "cherry"], "banana") #=> ["banana"]
+filter([true, false, true], true) #=> [true, true]
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `filter` i `filter.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

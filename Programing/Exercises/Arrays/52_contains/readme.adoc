@@ -1,0 +1,31 @@
+== 52. contains
+
+`contains` tar en array och ett värde som input och returnerar `true` om värdet finns med i arrayen. Annars returnerar funktionen `false`.
+
+[WARNING]
+====
+Skriv funktionen utan att använda `Array#include?`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+contains([1, 2, 3, 4], 3) #=> true
+contains([1, 2, 3, 4], 5) #=> false
+contains(['a', 'b', 'c'], 'b') #=> true
+contains(['a', 'b', 'c'], 'd') #=> false
+contains([], 1) #=> false
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#tidigt-avbrott[tidigt avbrott]. 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `contains` i `contains.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

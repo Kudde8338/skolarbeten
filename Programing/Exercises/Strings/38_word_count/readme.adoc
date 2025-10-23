@@ -1,0 +1,12 @@
+== 38. Word Count
+
+`word_count` tar en en sträng som input och returnerar antalet *ord* i filen. (Ett ord är en sekvens av bokstäver, tecken och/eller siffror som är avgränsade av mellanslag).
+
+[source, ruby]
+.Exempelanrop
+----
+word_count("this is a sentence with seven words.") #=> 7
+word_count("this string has a linebreak\nwhich does not count as a space") #=> 11
+word_count("this string has numbers and      many spaces in a row, also space at the end. ") #=> 15
+word_count("") #=> 0
+----

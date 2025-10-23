@@ -1,0 +1,30 @@
+== 42. Last Element
+
+`last_element` tar en array som input och returnerar det sista elementet i arrayen som output.
+
+[source, ruby]
+.Exempelanrop
+----
+last_element([1, 2, 3, 4]) #=> 4
+last_element(["a", "b", "c"]) #=> "c"
+last_element([true, false, true]) #=> true
+last_element([]) #=> nil
+----
+
+[WARNING]
+====
+Skriv funktionen utan att använda index `[-1]`. 
+====
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `last_element` i `last_element.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

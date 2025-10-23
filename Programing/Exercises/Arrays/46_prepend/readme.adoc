@@ -1,0 +1,30 @@
+== 46. prepend
+
+`prepend` tar en array och ett värde som input och ger en ny array som output, där värdet läggs i början på arrayen.
+
+[WARNING]
+====
+Skriv funktionen utan att använda `+` mellan två arrayer. Du får använda loopar, samt `<<`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+prepend([2, 3, 4], 1) #=> [1, 2, 3, 4]
+prepend(["b", "c"], "a") #=> ["a", "b", "c"]
+prepend([], 5) #=> [5]
+prepend([true, false], true) #=> [true, true, false]
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plans#iterativt-uppbyggd-output[iterativt uppbbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `prepend` i `prepend.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

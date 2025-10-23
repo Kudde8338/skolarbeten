@@ -1,0 +1,31 @@
+== 49. Min
+
+`min` tar en array av floats eller integers som input och returnerar det minsta värdet som output.
+
+[WARNING]
+====
+Skapa funktionen utan att använda metoden `.min`.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+min([3.5, 2.1, 5.6, 1.2]) #=> 1.2
+min([10, 20, 5, 15]) #=> 5
+min([-1, -5, -3, -4]) #=> -5
+min([0, 0, 0, 0]) #=> 0
+min([7.7, 3.3, 9.9, 2.2]) #=> 2.2
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `min` i `min.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

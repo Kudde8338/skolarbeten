@@ -1,0 +1,29 @@
+== 41. First Element
+`first_element` tar en array som input och returnerar det första elementet i arrayen som output.
+
+[source, ruby]
+.Exempelanrop
+----
+first_element([1, 2, 3]) #=> 1
+first_element(["a", "b", "c"]) #=> "a"
+first_element([4, 5, 6]) #=> 4
+first_element([]) #=> nil
+first_element(["a", 1, 2]) #=> "a"
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] 
+====
+
+[WARNING]
+====
+Om listan är tom ska funktionen returnera `nil`.
+====
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `first_element` i `first_element.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument. 
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.
