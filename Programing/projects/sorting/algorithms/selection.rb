@@ -1,3 +1,5 @@
+$selection_state = []
+
 def selection_V1(array)
     j = 0
     while j < array.length
@@ -30,6 +32,7 @@ def selection(array)
         temp = array[j]
         array[j] = array[min]
         array[min] = temp 
+        $selection_state.push(array.dup)
         j += 1
     end
     return array

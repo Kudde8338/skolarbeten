@@ -1,6 +1,7 @@
 require_relative 'algorithms/selection.rb'
 require_relative 'algorithms/insertion.rb'
 require_relative 'algorithms/quick.rb'
+require_relative 'algorithms/bogo.rb'
 
 # måste installera: gem install benchmark-ips
 require 'benchmark/ips' # Inkludera benchmark bibliotek

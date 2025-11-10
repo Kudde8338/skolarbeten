@@ -1,3 +1,5 @@
+$quick_state = []
+
 def quick(array, start=0, stop=array.length-1)
     return array if start >= stop
 
@@ -10,6 +12,7 @@ def quick(array, start=0, stop=array.length-1)
             temp = array[i]
             array[i] = array[j]
             array[j] = temp
+            $quick_state.push(array.dup)
         end
         j+=1
     end
@@ -20,7 +23,12 @@ def quick(array, start=0, stop=array.length-1)
     larger = [i+2, stop]
     pivot = i+1
 
+    $quick_state.push(array.dup)
     quick(array, start, pivot-1)
     quick(array, pivot+1, stop)
     return array
-end
+end    
+
+
+#array = ((1..10_000_000).to_a +  (1..10_000_000).to_a).shuffle
+#array = (1..20).to_a.shuffle

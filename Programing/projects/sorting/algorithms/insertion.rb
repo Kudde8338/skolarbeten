@@ -1,3 +1,5 @@
+$insertion_state = []
+
 def insertion(array)
     sorted = 1
     while sorted < array.length
@@ -7,6 +9,7 @@ def insertion(array)
                 temp = array[i]
                 array[i] = array[i - 1]
                 array[i - 1] = temp
+                $insertion_state.push(array.dup)
                 i -= 1
             else
                 break
