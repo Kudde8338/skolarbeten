@@ -4,8 +4,7 @@ def bogo(array)
     sorted = false
     until sorted
         array = array.shuffle
-        $bogo_state.append()
-        p array
+        $bogo_state.push(array.dup)
         i = 0
         sorted = true
         while i < array.length - 1

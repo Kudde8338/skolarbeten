@@ -15,7 +15,7 @@ def visualize(array_history)
 end
 
 
-array = (1..15).to_a.shuffle
+array = (1..5).to_a.shuffle
 selection(array.dup)
 p "Selection Done"
 insertion(array.dup)
@@ -24,6 +24,7 @@ quick(array.dup)
 p "Quick Done"
 bogo(array.dup)
 p "Bogo Done"
+
 visualize($selection_state)
 puts "Press Enter to continue..."
 gets
