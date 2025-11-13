@@ -1,0 +1,42 @@
+== 58. Bubble Sort
+
+`bubble_sort` Tar en array med tal som input och ger en **ny array** som output, där arrayen är sorterad i storleksordning. Funktionen följer algoritmen för **Bubble Sort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+====
+
+[INFO]
+====
+Bubble Sort är en sorteringsalgoritm som fungerar genom att
+
+1. I den osorterade listan jämföra två bredvid varandra liggande värden
+2. Om de två jämförda värdena ligger i fel ordning, byta plats på dem.
+3. Upprepa från steg 1 till alla värden ligger på rätt plats.
+
+link:https://en.wikipedia.org/wiki/Bubble_sort[Wikipedia: Bubble Sort]
+====
+
+[source, ruby]
+.Exempelanrop
+----
+bubble_sort([4, 2, 7, 1, 3]) #=> [1, 2, 3, 4, 7]
+bubble_sort([10, 9, 8, 7, 6]) #=> [6, 7, 8, 9, 10]
+bubble_sort([1, 2, 3, 4, 5]) #=> [1, 2, 3, 4, 5]
+bubble_sort([5, 4, 3, 2, 1]) #=> [1, 2, 3, 4, 5]
+bubble_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `bubble_sort` i `bubble_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

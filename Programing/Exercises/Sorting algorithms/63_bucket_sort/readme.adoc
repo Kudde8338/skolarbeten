@@ -1,0 +1,40 @@
+== 63. Bucket Sort
+
+`bucket_sort` tar en array med tal som input och returnerar en ny, sorterad array som output. Funktionen följer algoritmen för **Bucket Sort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+
+Skriv funktionen utan att använda metoderna `.sort`.
+====
+
+[INFO]
+====
+Bucket Sort är en sorteringsalgoritm som fungerar genom att distribuera elementen i ett antal "buckets" (hinkar). Varje bucket sorteras sedan individuellt, antingen genom att använda en annan sorteringsalgoritm eller genom att rekursivt tillämpa bucket sort. Algoritmen är mest effektiv när elementen är jämnt fördelade över intervallet.
+
+link:https://en.wikipedia.org/wiki/Bucket_sort[Wikipedia: Bucket Sort]
+====
+
+
+[source, ruby]
+.Exempelanrop
+----
+bucket_sort([3, 6, 8, 10, 1, 2, 1]) #=> [1, 1, 2, 3, 6, 8, 10]
+bucket_sort([5, 3, 8, 4, 2]) #=> [2, 3, 4, 5, 8]
+bucket_sort([1, 1, 1, 1, 1]) #=> [1, 1, 1, 1, 1]
+bucket_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `bucket_sort` i `bucket_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

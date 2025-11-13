@@ -1,0 +1,46 @@
+== 65. Bogosort *bonus uppgift*
+
+`bogosort` tar en array med tal som input och returnerar en ny, sorterad array som output. Funktionen följer algoritmen för **Bogosort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+
+Skriv funktionen utan att använda metoderna `.sort`.
+====
+
+[INFO]
+====
+Bogosort (även känd som "permutation sort", "stupid sort" eller "slow sort") är en mycket ineffektiv sorteringsalgoritm som fungerar genom att:
+
+1. Kontrollera om arrayen är sorterad
+2. Om inte, blanda om elementen slumpmässigt
+3. Upprepa tills arrayen är sorterad
+
+Detta är en humoristisk algoritm som används för att illustrera hur ineffektiv en algoritm kan vara. I värsta fall kan den ta oändligt lång tid, och i genomsnitt har den en tidskomplexitet på O(n×n!).
+
+link:https://en.wikipedia.org/wiki/Bogosort[Wikipedia: Bogosort]
+====
+
+
+[source, ruby]
+.Exempelanrop
+----
+bogosort([3, 2, 1]) #=> [1, 2, 3]
+bogosort([5, 3, 8, 4, 2]) #=> [2, 3, 4, 5, 8]
+bogosort([1, 1, 1, 1, 1]) #=> [1, 1, 1, 1, 1]
+bogosort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `bogosort` i `bogosort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,38 @@
+== 60. quick_sort
+
+`quick_sort` tar en array som input returnerar en **ny** sorterad array som output.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+====
+
+[NOTE]
+====
+Quick Sort är en effektiv sorteringsalgoritm som använder sig av en delnings-och-erövringsstrategi. Algoritmen fungerar genom att välja ett "pivot"-element från arrayen och partitionera de andra elementen i två sub-arrayer, beroende på om de är mindre än eller större än pivoten. Sub-arrayerna sorteras sedan med hjälp av rekursion.
+
+link:https://en.wikipedia.org/wiki/Quicksort[Wikipedia: Quick Sort]
+====
+
+
+[source, ruby]
+.Exempelanrop
+----
+quick_sort([3, 6, 8, 10, 1, 2, 1]) #=> [1, 1, 2, 3, 6, 8, 10]
+quick_sort([5, 3, 8, 4, 2]) #=> [2, 3, 4, 5, 8]
+quick_sort([1, 1, 1, 1, 1]) #=> [1, 1, 1, 1, 1]
+quick_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `quick_sort` i `quick_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,44 @@
+== 57. Selection Sort*
+
+`selection_sort` Tar en array med tal som input och ger en **ny array** som output, där arrayen är sorterad i storleksordning. Funktionen ska följa algoritmen för **Selection Sort**.
+
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+====
+
+[INFO]
+====
+Selection Sort är en enkel sorteringsalgoritm som fungerar genom att
+
+1. Hitta det minsta värdet i den osorterade listan.
+2. Ta bort det hittade värdet från den osorterade listan
+3. Lägg till det borttagna värdet längst bak i den sorterade listan.
+4. Upprepa från steg 1 till den osorterade listan är tom.
+
+link:https://en.wikipedia.org/wiki/Selection_sort[Wikipedia: Selection Sort]
+====
+
+[source, ruby]
+.Exempelanrop
+----
+selection_sort([64, 25, 12, 22, 11]) #=> [11, 12, 22, 25, 64]
+selection_sort([5, 3, 6, 2, 10]) #=> [2, 3, 5, 6, 10]
+selection_sort([1, 2, 3, 4, 5]) #=> [1, 2, 3, 4, 5]
+selection_sort([5, 4, 3, 2, 1]) #=> [1, 2, 3, 4, 5]
+selection_sort([3, 0, -1, 8, 7]) #=> [-1, 0, 3, 7, 8]
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `selection_sort` i `selection_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

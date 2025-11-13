@@ -1,0 +1,45 @@
+== 61. Insertion Sort (in-place)
+
+`insertion_sort` Tar en array med tal som input och sorterar arrayen i storleksordning. Funktionen följer algoritmen för **Insertion Sort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+
+Skriv funktionen utan att använda metoderna `.sort`. Funktionen är en **in-place**-funktion, vilket innebär att den ska ändra den ursprungliga arrayen.
+
+**VIKTIGT:** Använd endast swap-operationer (byta plats på element). Använd INTE metoder som ändrar arrayens längd som `.pop`, `.push`, `.delete`, `.insert` etc. Att ändra längden på en array är en mycket kostsam operation, och in-place sortering ska endast ändra ordningen på elementen som redan finns i arrayen.
+====
+
+[INFO]
+====
+Insertion Sort är en enkel sorteringsalgoritm som bygger en sorterad array en post i taget. Den fungerar genom att iterera genom listan och för varje element, jämföra det med de tidigare elementen och placera det på rätt plats. Algoritmen fortsätter tills hela listan är sorterad.
+link:https://en.wikipedia.org/wiki/Insertion_sort[Wikipedia: Insertion Sort]
+====
+
+[TIP]
+====
+Du behöver hålla koll på var den sorterade delen av listan slutar och den osorterade delen börjar. Den sorterade delen växer från vänster, och för varje nytt element från den osorterade delen måste du hitta rätt plats i den sorterade delen genom att jämföra och byta plats bakåt.
+====
+
+[source, ruby]
+.Exempelanrop
+----
+insertion_sort([5, 2, 9, 1, 5, 6]) #=> [1, 2, 5, 5, 6, 9]
+insertion_sort([3, 0, -1, 8, 7, 2]) #=> [-1, 0, 2, 3, 7, 8]
+insertion_sort([1, 2, 3, 4, 5]) #=> [1, 2, 3, 4, 5]
+insertion_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `insertion_sort` i `insertion_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

@@ -1,0 +1,42 @@
+== 59. Insertion sort
+
+`insertion_sort` Tar en array med tal som input och ger en **ny array** som output, där arrayen är sorterad i storleksordning. Funktionen följer algoritmen för **Insertion Sort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+====
+
+[INFO]
+====
+Insertion Sort fungerar genom att
+
+1. Ta bort ett element från den osorterade listan
+2. Hitta rätt plats i den sorterade listan för det borttagna värdet
+3. Stoppa in värdet på den hittade platsen i den sorterade listan
+4. Upprepa från steg 1 till den osorterade listan är tom
+
+link:https://en.wikipedia.org/wiki/Insertion_sort[Wikipedia: Insertion Sort]
+====
+
+[source, ruby]
+.Exempelanrop
+----
+insertion_sort([5, 2, 9, 1, 5, 6]) #=> [1, 2, 5, 5, 6, 9]
+insertion_sort([3, 0, -1, 8, 7, 2]) #=> [-1, 0, 2, 3, 7, 8]
+insertion_sort([1, 2, 3, 4, 5]) #=> [1, 2, 3, 4, 5]
+insertion_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `insertion_sort` i `insertion_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.

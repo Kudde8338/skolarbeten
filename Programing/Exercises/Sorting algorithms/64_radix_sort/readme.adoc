@@ -1,0 +1,40 @@
+== 64. Radix Sort
+
+`radix_sort` tar en array med tal som input och returnerar en ny, sorterad array som output. Funktionen följer algoritmen för **Radix Sort**.
+
+[WARNING]
+====
+Sorteringsalgoritmsuppgifterna skiljer sig lite från de andra uppgifterna i att det inte räcker att resultatet av er lösning blir rätt, ni måste också följa rätt **algoritm** för att uppnå resultatet. De automatiska testerna kontrollerar bara *resultatet*, inte *algoritmen*.
+
+Skriv funktionen utan att använda metoderna `.sort`.
+====
+
+[INFO]
+====
+Radix Sort är en sorteringsalgoritm som sorterar tal genom att behandla varje siffra i talen separat. Algoritmen fungerar genom att sortera talen baserat på den minst signifikanta siffran först, och sedan fortsätta med nästa siffra tills alla siffror har behandlats. Radix Sort är särskilt effektiv för att sortera stora mängder heltal.
+
+link:https://en.wikipedia.org/wiki/Radix_sort[Wikipedia: Radix Sort]
+====
+
+
+[source, ruby]
+.Exempelanrop
+----
+radix_sort([170, 45, 75, 90, 802, 24, 2, 66]) #=> [2, 24, 45, 66, 75, 90, 170, 802]
+radix_sort([3, 6, 8, 10, 1, 2, 1]) #=> [1, 1, 2, 3, 6, 8, 10]
+radix_sort([5, 3, 8, 4, 2]) #=> [2, 3, 4, 5, 8]
+radix_sort([]) #=> []
+----
+
+[IMPORTANT]
+====
+Använd verktygen link:../goals_and_plans#indexering[indexering] och link:../goals_and_plan#iterativt-uppbyggd-output[iterativt uppbyggd output]
+====
+
+
+
+* Skapa ett flödesschema med penna och papper.
+* Testkör flödesschemat med olika värden för att säkerställa att det fungerar.
+* Implementera funktionen `radix_sort` i `radix_sort.rb`.
+* Testa din lösning manuellt genom att anropa funktionen med olika argument.
+* Kör de automatiska testerna med `rake` i uppgiftens rotmapp i terminalen.
