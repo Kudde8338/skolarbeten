@@ -1,10 +1,12 @@
 $bogo_state = []
 
-def bogo(array)
+def bogo(array, visualize=false)
     sorted = false
     until sorted
         array = array.shuffle
-        $bogo_state.push(array.dup)
+        if visualize
+            $bogo_state.push(array.dup)
+        end
         i = 0
         sorted = true
         while i < array.length - 1

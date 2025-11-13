@@ -1,6 +1,6 @@
 $quick_state = []
 
-def quick(array, start=0, stop=array.length-1)
+def quick(array, start=0, stop=array.length-1, visualize=false)
     return array if start >= stop
 
     i = start - 1
@@ -12,7 +12,9 @@ def quick(array, start=0, stop=array.length-1)
             temp = array[i]
             array[i] = array[j]
             array[j] = temp
-            $quick_state.push(array.dup)
+            if visualize
+                $quick_state.push(array.dup)
+            end
         end
         j+=1
     end
@@ -23,12 +25,10 @@ def quick(array, start=0, stop=array.length-1)
     larger = [i+2, stop]
     pivot = i+1
 
-    $quick_state.push(array.dup)
-    quick(array, start, pivot-1)
-    quick(array, pivot+1, stop)
+    if visualize
+        $quick_state.push(array.dup)
+    end
+    quick(array, start, pivot-1, visualize)
+    quick(array, pivot+1, stop, visualize)
     return array
-end    
-
-
-#array = ((1..10_000_000).to_a +  (1..10_000_000).to_a).shuffle
-#array = (1..20).to_a.shuffle
+end
