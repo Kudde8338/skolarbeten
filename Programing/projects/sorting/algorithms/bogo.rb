@@ -4,7 +4,7 @@ def bogo(array, visualize=false)
     sorted = false
     until sorted
         array = array.shuffle
-        if visualize
+        if visualize == true
             $bogo_state.push(array.dup)
         end
         i = 0

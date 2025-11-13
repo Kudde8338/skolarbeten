@@ -14,7 +14,7 @@ def selection(array, visualize=false)
         temp = array[j]
         array[j] = array[min]
         array[min] = temp 
-        if visualize
+        if visualize == true
             $selection_state.push(array.dup)
         end
         j += 1

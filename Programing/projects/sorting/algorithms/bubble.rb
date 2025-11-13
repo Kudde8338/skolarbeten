@@ -1,3 +1,5 @@
+$bubble_state = []
+
 def bubble(array)
     swaps = 1
     while swaps > 0
@@ -7,6 +9,9 @@ def bubble(array)
             if array[i] > array[i + 1]
                 array[i], array[i + 1] = array[i + 1], array[i]
                 swaps += 1
+                if visualize == true
+                    $bubble_state.push(array.dup)
+                end
             end
             i += 1
         end

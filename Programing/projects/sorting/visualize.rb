@@ -15,14 +15,14 @@ def visualize(array_history)
 end
 
 
-array = (1..5).to_a.shuffle
-selection(array.dup)
+array = ((1..3).to_a +  (1..3).to_a).shuffle
+selection(array.dup, visualize=true)
 p "Selection Done"
-insertion(array.dup)
+insertion(array.dup, visualize=true)
 p "Insertion Done"
-quick(array.dup)
+quick(array.dup, 0, nil, true)
 p "Quick Done"
-bogo(array.dup)
+bogo(array.dup, visualize=true)
 p "Bogo Done"
 
 visualize($selection_state)

@@ -9,7 +9,7 @@ def insertion(array, visualize=false)
                 temp = array[i]
                 array[i] = array[i - 1]
                 array[i - 1] = temp
-                if visualize
+                if visualize == true
                     $insertion_state.push(array.dup)
                 end
                 i -= 1
