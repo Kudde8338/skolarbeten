@@ -10,7 +10,7 @@ def get_min_max_value(array)
             max_value = array[i]
         end
         i += 1
-    end
+    end 
 
     return [min_value, max_value]
 end
