@@ -16,7 +16,7 @@ def unique(array)
     i = 0
 
     while i < array.length
-        if contains(newArray, array[i]) == true
+        if contains(newArray, array[i])
             i += 1
         else    
             newArray << array[i]

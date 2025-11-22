@@ -1,6 +1,6 @@
 $bubble_state = []
 
-def bubble(array)
+def bubble(array, visualize=false)
     swaps = 1
     while swaps > 0
         swaps = 0
