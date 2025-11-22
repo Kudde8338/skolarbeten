@@ -58,8 +58,3 @@ def bucket(array, k=5)
     end
     return sorted
 end
-
-#int_array = ((1..100).to_a + (1..100).to_a).shuffle
-#float_array = ((0.0.step(100.0, 0.001).to_a + 0.0.step(100.0, 0.001).to_a).shuffle)
-#p bucket(int_array, 20)
-#p bucket(float_array, 20)
