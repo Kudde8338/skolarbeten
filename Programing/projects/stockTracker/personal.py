@@ -24,7 +24,7 @@ QCOM_shares = 1
 SHBB_shares = 30
 FRACTL_shares = 5
 MTGB_shares = 5
-AVANZAZERO_shares = 13.85
+AVANZAZERO_shares = 14.21
 
 QCOM_value = round(QCOM[0] * QCOM_shares, 2)
 SHBB_value = round(SHBB[0] * SHBB_shares, 2)
