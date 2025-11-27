@@ -51,3 +51,11 @@ def selection_string(array)
     sorted_decoded_array = decode_string_array(sorted_encoded_array)
     return sorted_decoded_array
 end
+
+p bucket_string([
+  "k3Lx9pA2",
+  "fN7qW1zB",
+  "rP0mT8sQ",
+  "Zy4vB6nH",
+  "wQ2tK9eJ"
+])
