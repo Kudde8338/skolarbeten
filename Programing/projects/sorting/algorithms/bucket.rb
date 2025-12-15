@@ -18,11 +18,6 @@ end
 def get_intervals(array, k)
     min_value, max_value = get_min_max_value(array)
     range = max_value - min_value 
-
-    #while range % k != 0 || range == 0
-    #    range += 1
-    #end
-
     intervals = range / k.to_f
     return intervals
 end
@@ -58,3 +53,5 @@ def bucket(array, k=5)
     end
     return sorted
 end
+
+p bucket([1,83,3,2,7,28,2,3,36,34])

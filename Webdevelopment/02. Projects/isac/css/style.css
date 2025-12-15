@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(41, 41, 110);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, p ,li {
+    color:white;
+}
+
+img {
+    width: 75%;
+}
+
+h1 {
+    text-align: center;
+}
